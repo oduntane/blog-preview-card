@@ -6,6 +6,7 @@
     --gray-950: #111111;
     --gray-500: #6B6B6B;
     --white: #FFFFFF;
+    font-family: "FigTree", sans-serif;
 }
 
 
@@ -30,7 +31,7 @@
     margin-inline: auto;
     background-color: var(--white);
     flex: 0 0 ;
-    height: 501px;
+    min-height: 522px;
 }
 
 .card-image > img {
@@ -100,8 +101,3 @@
     font-weight: bold;
 }
 
-@media (min-width: 376px) {
-    .card {
-        height: 522px;
-    }
-}
