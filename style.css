@@ -1,3 +1,7 @@
+:root {
+    font-size: 12px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,8 +10,11 @@
     --gray-950: #111111;
     --gray-500: #6B6B6B;
     --white: #FFFFFF;
+    --gap-size: 1rem;
     font-family: "FigTree", sans-serif;
 }
+
+
 
 
 .container {
@@ -22,60 +29,59 @@
 .card {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding: 24px;
+    gap: calc(2 * var(--gap-size));
+    padding: 2em;
     border: 1px solid var(--gray-950);
-    inline-size: 327px;
-    border-radius: 20px;
-    box-shadow: 8px 8px var(--gray-950);
+    inline-size: 27.25rem;
+    border-radius: 1.6em;
+    box-shadow: 0.6em 0.6em var(--gray-950);
     margin-inline: auto;
     background-color: var(--white);
     flex: 0 0 ;
-    min-width: 327px;
 }
 
 @media (min-width: 376px) {
     .card {
-        min-width: 384px;
+        min-width: 32rem;
     }
 }
 
 .card-image > img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.83em;
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 1em;
     padding: 0;
     align-items: flex-start;
 }
 
 .card-body > :first-child {
-    font-size: 14px;
+    font-size: 1.16em;
     font-weight: bold;
     line-height: 150%;
     letter-spacing: 0;
-    padding: 4px 12px;
+    padding: 0.33em 1em;
     background-color: var(--yellow);
-    border-radius: 4px;
+    border-radius: 0.33em;
     color: var(--gray-950);
 }
 
 .card-body > :nth-child(2) {
-    font-size: 14px;
+    font-size: 1.16em;
     line-height: 150%;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: var(--gray-950);
 }
 
 .card-body > :nth-child(3) {
-    font-size: 24px;
+    font-size: 2em;
     font-weight: bold;
     line-height: 150%;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: var(--gray-950);
 }
 
@@ -91,29 +97,29 @@
 
 
 .card-body > :last-child {
-    font-size: 16px;
+    font-size: 1.33em;
     line-height: 150%;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: var(--gray-500);
 }
 
 .card-footer {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 1em;
 }
 
 .card-footer > img {
-    width: 32px;
-    height: 32px;
-    border-radius: 33px;
+    width: 2.66em;
+    height: 2.66em;
+    border-radius: 2.7em;
 }
 
 .card-footer > :last-child {
     color: var(--gray-950);
-    font-size: 14px;
+    font-size: 1.16em;
     font-weight: bold;
     line-height: 150%;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 }
 

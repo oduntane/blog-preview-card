@@ -12,27 +12,26 @@
   </head>
   <body>
 
-  <div class="container">
-    <div class="card">
-      <div class="card-image">
+  <main class="container">
+    <section class="card" role="region" aria-roledescription="card">
+      <header>
         <img src="/illustration-article.svg" alt="Illustration Article" />
-      </div>
-      <div class="card-body">
-        <span>Learning</span>
+      </header>
+      <div class="card-body" role="region" aria-roledescription="card body" aria-labelledby="card body">
+        <span role="none">Learning</span>
         <p>Published 21 Dec 2023</p>
-        <p><a href="#">HTML & CSS foundations</a></p>
+        <h1><a href="#">HTML & CSS foundations</a></h1>
         <p>
           These languages are the backbone of every
           website, defining structure, content, and
           presentation.
         </p>
       </div>
-      <div class="card-footer">
+      <footer class="card-footer">
         <img src="/image-avatar.webp" alt="Avatar" />
         <span>Greg Hooper</span>
-      </div>
-    </div>
-  </div>
-
+      </footer>
+    </section>
+  </main>
   </body>
 </html>
